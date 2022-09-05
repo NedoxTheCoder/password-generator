@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="screen">
+            Your password is:
+            <span class="willbeshown"></span>
+        </div>
+        <div class="inputs">
+            <div class="ranges">
+            <label for="numbers">How many numbers do u want?</label><div>
+            <input type="range" name="Numbers" id="numbers" min="0" max="5" value="1" class="rangeinput">
+            <div class="slider-value numbersval">1</div></div></div>
+            <div class="ranges">
+            <label for="letters">How many letters do u want?</label><div>
+            <input type="range" name="Letters" id="letters" min="0" max="5" value="1" class="rangeinput">
+            <div class="slider-value lettersval">1</div></div>
+        </div>
+            <div class="ranges">
+            <label for="special">How many special characters do u want?</label><div>
+            <input type="range" name="Specials" id="special" min="0" max="5" value="1" class="rangeinput">
+            <div class="slider-value specialval">1</div></div>
+        </div>
+        <div class="checkbox">
+            <label for="check" class="uppercase">
+                Include Uppercase
+        </label>
+            <input type="checkbox" name="" id="check">
+    </div>
+        <div>
+        <button class="generate">Generate It!</button></div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
