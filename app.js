@@ -20,7 +20,7 @@ const nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 const specialChar = ['!', '#', '$', '%', '&', '(', ')', '*', '+', ',', '-', '.', '/'];
 const uppercase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'].concat(letters);
-const obj = { nums: "n", letters: "l", specialChar: "s" }
+const obj = { nums: "n",  specialChar: "s", letters: "l"}
 //? Value display
 
 
@@ -61,7 +61,7 @@ const shuffle = str => [...str].sort(() => Math.random() - .5).join('')
 
 let pass = ""
 function passWord(){
-    let arr = [output1.innerHTML,output2.innerHTML,output3.innerHTML]
+    let arr = [output1.innerHTML,output3.innerHTML,output2.innerHTML]
     const upperVal = document.querySelector("#check").checked
     if(upperVal){
         delete Object.assign(obj, {uppercase: obj.letters }).letters;
